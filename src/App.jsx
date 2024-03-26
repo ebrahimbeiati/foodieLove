@@ -4,6 +4,7 @@ import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Order from "./components/Order";
 import Review from "./components/Review";
+import MenuCard from "./layouts/MenuCard";
 const App = () => {
   return (
     <>
@@ -16,8 +17,8 @@ const App = () => {
       </main>
 
       <About />
-
       <Menu />
+      <MenuCard />
       <Order />
       <Review />
     </>
