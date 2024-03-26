@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      color: {
+        brightColor: "#F4511F",
+        backGroundColor: "#b7bca9",
+        lightText: "#959595",
+      }
+    },
   },
   plugins: [],
 }
