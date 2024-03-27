@@ -21,13 +21,13 @@ import frenchfries from "../assets/img/frenchfries.jpeg";
 import eggsandwich from "../assets/img/eggsandwich.jpeg";
 import crab from "../assets/img/crab.jpeg";
 
-
-
 const Menu = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
-      <h1 className="text-5xl font-semibold text-center pt-24 pb-10 ">Our Menu</h1>
-      <div className="flex flex-wrap  justify-center  gap-4">
+      <h1 className="text-5xl font-semibold text-center pt-24 pb-10">
+        Our Menu
+      </h1>
+      <div className="flex flex-wrap justify-center gap-4">
         <MenuCard title="Cakes" img={cake} price="$10" />
         <MenuCard title="Pizzas" img={pizza} price="$15" />
         <MenuCard title="Salads" img={salad} price="$5" />
@@ -46,14 +46,12 @@ const Menu = () => {
         <MenuCard title="Shrimp" img={shrimp} price="$25" />
         <MenuCard title="Prawn" img={prawn} price="$20" />
         <MenuCard title="Fruit Salad" img={fruitsalad} price="$10" />
-       
         <MenuCard title="French Fries" img={frenchfries} price="$10" />
         <MenuCard title="Eggs Sandwich" img={eggsandwich} price="$10" />
         <MenuCard title="Crab" img={crab} price="$20" />
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default Menu;

@@ -11,18 +11,22 @@ const App = () => {
       <Navbar />
       <main>
         <div id="home">
-       
           <Home />
+        </div>
+        <div className="menu-section" id="menu">
+          <Menu />
+        </div>
+        <div id="about">
+          <About />
         </div>
       </main>
 
-      <About />
-      <Menu />
-      <MenuCard />
+     
+      
       <Order />
       <Review />
     </>
   );
-}
+};
 
-export default App
+export default App;
