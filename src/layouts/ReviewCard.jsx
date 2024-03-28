@@ -174,7 +174,7 @@ const ReviewCard = () => {
   };
 
   return (
-    <div className="grid  grid-cols-4 gap-2">
+    <div className="flex flex-wrap  flex-cols-3 gap-2 m-3">
       {reviews.map((review, index) => (
         <div
           key={index}

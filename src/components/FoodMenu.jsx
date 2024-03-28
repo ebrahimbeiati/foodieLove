@@ -1,4 +1,3 @@
-// FoodMenu.js
 import MenuCard from "../layouts/MenuCard";
 import cake from "../assets/img/cake.jpeg";
 import pizza from "../assets/img/pizza.jpeg";
@@ -21,8 +20,41 @@ import fruitsalad from "../assets/img/fruitsalad.jpeg";
 import frenchfries from "../assets/img/frenchfries.jpeg";
 import eggsandwich from "../assets/img/eggsandwich.jpeg";
 import crab from "../assets/img/crab.jpeg";
+import { useOrder } from "../contexts/OrderContext";
+
 
 const FoodMenu = () => {
+    const { addOrder } = useOrder(); // Access addOrder function from context
+
+    const handleOrder = (item) => {
+      addOrder(item); // Add item to the order
+    };
+
+
+  const foodItems = [
+    { title: "Cakes", img: cake, price: "$10", rating: 4.5 },
+    { title: "Pizzas", img: pizza, price: "$15", rating: 4.5 },
+    { title: "Salads", img: salad, price: "$5", rating: 3.5 },
+    { title: "Burgers", img: burger, price: "$20", rating: 4.5 },
+    { title: "Vegies", img: vegie, price: "$10", rating: 4.5 },
+    { title: "Pasta", img: pasta, price: "$10", rating: 4.5 },
+    { title: "Chicken", img: chicken, price: "$20", rating: 4.5 },
+    { title: "Fish", img: fish, price: "$25", rating: 4.5 },
+    { title: "Hamburger", img: hamburger, price: "$15", rating: 4.5 },
+    { title: "Kebab", img: kebab, price: "$20", rating: 4.5 },
+    { title: "Indian Spicy", img: indianspicy, price: "$15", rating: 4.5 },
+    { title: "Noodles", img: noodles, price: "$10", rating: 4.5 },
+    { title: "Steak", img: steak, price: "$30", rating: 4.5 },
+    { title: "Spaghetti", img: spagheti, price: "$10", rating: 4.5 },
+    { title: "Soup", img: soup, price: "$10", rating: 4.5 },
+    { title: "Shrimp", img: shrimp, price: "$25", rating: 4.5 },
+    { title: "Prawn", img: prawn, price: "$20", rating: 4.5 },
+    { title: "Fruit Salad", img: fruitsalad, price: "$10", rating: 4.5 },
+    { title: "French Fries", img: frenchfries, price: "$10", rating: 4.5 },
+    { title: "Eggs Sandwich", img: eggsandwich, price: "$10", rating: 4.5 },
+    { title: "Crab", img: crab, price: "$20", rating: 4.5 },
+  ];
+
   return (
     <>
       <div className="pt-12 mt-6 bg-gray-100 flex flex-col justify-center items-center">
@@ -32,27 +64,17 @@ const FoodMenu = () => {
       </div>
       <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
         <div className="flex flex-wrap justify-center gap-4">
-          <MenuCard title="Cakes" img={cake} price="$10" />
-          <MenuCard title="Pizzas" img={pizza} price="$15" />
-          <MenuCard title="Salads" img={salad} price="$5" />
-          <MenuCard title="Burgers" img={burger} price="$20" />
-          <MenuCard title="Vegies" img={vegie} price="$10" />
-          <MenuCard title="Pasta" img={pasta} price="$10" />
-          <MenuCard title="Chicken" img={chicken} price="$20" />
-          <MenuCard title="Fish" img={fish} price="$25" />
-          <MenuCard title="Hamburger" img={hamburger} price="$15" />
-          <MenuCard title="Kebab" img={kebab} price="$20" />
-          <MenuCard title="Indian Spicy" img={indianspicy} price="$15" />
-          <MenuCard title="Noodles" img={noodles} price="$10" />
-          <MenuCard title="Steak" img={steak} price="$30" />
-          <MenuCard title="Spaghetti" img={spagheti} price="$10" />
-          <MenuCard title="Soup" img={soup} price="$10" />
-          <MenuCard title="Shrimp" img={shrimp} price="$25" />
-          <MenuCard title="Prawn" img={prawn} price="$20" />
-          <MenuCard title="Fruit Salad" img={fruitsalad} price="$10" />
-          <MenuCard title="French Fries" img={frenchfries} price="$10" />
-          <MenuCard title="Eggs Sandwich" img={eggsandwich} price="$10" />
-          <MenuCard title="Crab" img={crab} price="$20" />
+          {foodItems.map((item, index) => (
+            <MenuCard
+              key={`food_${index}`}
+              title={item.title}
+              img={item.img}
+              price={item.price}
+              rating={item.rating}
+              showOrderButton={true}
+              onOrder={handleOrder} // or whatever logic you use to determine whether to show the button
+            />
+          ))}
         </div>
       </div>
     </>
@@ -60,3 +82,4 @@ const FoodMenu = () => {
 };
 
 export default FoodMenu;
+
