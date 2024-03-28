@@ -2,12 +2,18 @@ import hero1 from "../assets/img/hero1.jpeg";
 const About = () => {
   return (
     <>
-      <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:px-35 px-4 mt-36 rounded pt-32 space-y-4 lg:space-y-0">
+      <div className="pt-12 mt-6 bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center mb-10 pt-24 md:px-32 px-5">
+          About Us{" "}
+        </h1>
+      </div>
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:px-35 px-4 mt-2 pb-24 rounded pt-32 space-y-4 lg:space-y-0">
         <img
           src={hero1}
           alt="about"
           loading="lazy"
-        className="rounded-lg shadow-[rgba(0,0,0,0.24)] shadow-md dark:shadow-[rgba(255,255,255,0.24)] dark:shadow-md mx-auto lg:w-1/2 md:w-3/4 sm:w-full"/>
+          className="rounded-lg shadow-[rgba(0,0,0,0.24)] shadow-md dark:shadow-[rgba(255,255,255,0.24)] dark:shadow-md mx-auto lg:w-1/2 md:w-3/4 sm:w-full"
+        />
 
         <div className="lg:pl-8">
           <div className="space-y-4">

@@ -23,10 +23,14 @@ import crab from "../assets/img/crab.jpeg";
 
 const Menu = () => {
   return (
+    <>
+      <div className="pt-12 mt-6 bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center mb-10 pt-24 md:px-32 px-5">
+          Our Menu
+        </h1>
+      </div>
     <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
-      <h1 className="text-5xl font-semibold text-center pt-24 pb-10">
-        Our Menu
-      </h1>
+      
       <div className="flex flex-wrap justify-center gap-4">
         <MenuCard title="Cakes" img={cake} price="$10" />
         <MenuCard title="Pizzas" img={pizza} price="$15" />
@@ -50,7 +54,9 @@ const Menu = () => {
         <MenuCard title="Eggs Sandwich" img={eggsandwich} price="$10" />
         <MenuCard title="Crab" img={crab} price="$20" />
       </div>
-    </div>
+    </div> 
+    </>
+   
   );
 };
 

@@ -1,10 +1,10 @@
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Order from "./components/Order";
 import Review from "./components/Review";
-import MenuCard from "./layouts/MenuCard";
 const App = () => {
   return (
     <>
@@ -19,12 +19,16 @@ const App = () => {
         <div id="about">
           <About />
         </div>
+        <div id="review">
+          <Review />
+        </div>
+        <div id="order">
+          <Order />
+        </div>
+          
       </main>
-
-     
+      <Footer />
       
-      <Order />
-      <Review />
     </>
   );
 };
