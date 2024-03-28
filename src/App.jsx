@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Order from "./components/Order";
 import Review from "./components/Review";
+import FoodMenu from "./components/FoodMenu";
+import DrinkMenu from "./components/DrinkMenu";
 const App = () => {
   return (
     <>
@@ -15,7 +17,16 @@ const App = () => {
         </div>
         <div className="menu-section" id="menu">
           <Menu />
+
+        
         </div>
+        <div id="drink">
+          <DrinkMenu />
+        </div>
+        <div id="food">
+          <FoodMenu />
+        </div>
+
         <div id="about">
           <About />
         </div>
@@ -25,10 +36,8 @@ const App = () => {
         <div id="order">
           <Order />
         </div>
-          
       </main>
       <Footer />
-      
     </>
   );
 };
