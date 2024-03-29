@@ -16,32 +16,8 @@ const Menu = () => {
   };
 
   return (
-    <div className="menu-container">
-      <h2>Our Menu</h2>
-      <div className="menu-dropdown">
-        <button
-          className={`menu-dropdown-btn ${
-            activeMenu === "food" ? "active" : ""
-          }`}
-          onClick={() => toggleMenu("food")}
-        >
-          Food
-        </button>
-        {activeMenu === "food" && <FoodMenu />}
-      </div>
-      <div className="menu-dropdown">
-        <button
-          className={`menu-dropdown-btn ${
-            activeMenu === "drink" ? "active" : ""
-          }`}
-          onClick={() => toggleMenu("drink")}
-        >
-          Drink
-        </button>
-        {activeMenu === "drink" && <DrinkMenu />}
-      </div>
-      <MenuCard />
-    </div>
+   
+     <MenuCard />
   );
 };
 

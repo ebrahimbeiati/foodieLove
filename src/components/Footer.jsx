@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <div className="bg-gray-400 rounded-t-3xl mt-8 md:mt-0 flex text-center justify-center items-center">
@@ -37,6 +36,6 @@ const Footer = () => {
       </footer>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

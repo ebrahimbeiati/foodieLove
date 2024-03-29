@@ -176,7 +176,7 @@ const MenuCard = (props) => {
 
 
   return (
-    <div className="w-full lg:w-1/4 p-4 shadow-[rgba(0,0,0,0.24)] shadow-md rounded-lg">
+    <div className="w-full lg:w-1/4 p-4 rounded-lg">
       {props.img && (
         <img
           className="rounded-xl w-full h-40 object-cover"
