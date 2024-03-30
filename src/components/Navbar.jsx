@@ -25,10 +25,12 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_4px_8px_10_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19)] items-center w-full h-full">
-        <div className="flex flex-row items-center cursor-pointer">
-          <BiRestaurant size={32} />
-          <h1 className="text-2xl font-semibold ml-2">FoodieLove</h1>
-        </div>
+        <Link to="/">
+          <div className="flex flex-row items-center cursor-pointer">
+            <BiRestaurant size={32} />
+            <h1 className="text-2xl font-semibold ml-2">FoodieLove</h1>
+          </div>
+        </Link>
         <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
           <Link
             to="/"
