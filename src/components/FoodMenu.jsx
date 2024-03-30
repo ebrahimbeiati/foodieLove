@@ -57,7 +57,7 @@ const FoodMenu = () => {
 
   return (
     <>
-      <div className="pt-2  bg-gray-100 flex flex-col justify-center items-center">
+      <div className="pt-2 bg-gray-100 flex flex-col justify-center items-center">
         <h1 className="text-3xl font-semibold text-center  pt-20 mb-3 md:px-32 px-2">
           Our Food Menu
         </h1>
