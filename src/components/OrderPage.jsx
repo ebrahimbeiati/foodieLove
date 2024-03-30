@@ -23,7 +23,7 @@ const OrderPage = () => {
 
   return (
     <div className=" bg-gray-300 grid grid-col p-24 mb-24 ">
-      <h1 className="m-36 flex flex-col text-3xl text-center font-semibold">
+      <h1 className="m-36 flex flex-col text-3xl text-center font-semibold ">
         Order Page
       </h1>
       {orders.length > 0 ? (

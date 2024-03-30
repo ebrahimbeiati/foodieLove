@@ -57,12 +57,12 @@ const FoodMenu = () => {
 
   return (
     <>
-      <div className="pt-4 mt-4 bg-gray-100 flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-semibold text-center mb-10 pt-1 md:px-32 px-5">
+      <div className="pt-2  bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center  pt-20 mb-3 md:px-32 px-2">
           Our Food Menu
         </h1>
       </div>
-      <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5">
+      <div className="min-h-screen flex flex-col justify-center items-center lg:px-22 px-5">
         <div className="flex flex-wrap justify-center gap-4">
           {foodItems.map((item, index) => (
             <MenuCard

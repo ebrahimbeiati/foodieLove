@@ -44,8 +44,8 @@ const DrinkMenu = () => {
 
   return (
     <>
-      <div className="pt-4 mt-2 bg-gray-100 flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-semibold text-center mb-10 pt-1 md:px-28 px-5">
+      <div className="pt-8 bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center mb-3 pt-14 md:px-28 px-6">
           Our Drink Menu
         </h1>
       </div>

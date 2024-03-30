@@ -1,10 +1,10 @@
 const ContactPage = () => {
   return (
     <div className="flex min-h-screen 
-bg-gray-100 flex-wrap justify-center items-center">
-      <main className="container mx-auto px-4 py-16">
+bg-gray-100 flex-col justify-center items-center">
+      <main className="container mx-auto px-4 py-12">
         <section className="contact-info shadow-md rounded-lg overflow-hidden bg-white">
-          <h2 className="text-3xl font-bold text-center p-6 mb-8">Get in Touch</h2>
+          <h2 className="text-3xl font-bold text-center p-6 mb-2">Get in Touch</h2>
           <div className="flex flex-cols-1 justify-center items-center p-12 gap-8">
             <div className="flex flex-col space-y-4">
               <h3 className="text-xl font-semibold text-gray-800">
