@@ -1,72 +1,20 @@
-// import React from "react";
-// import { useOrder } from "../contexts/OrderContext";
-
-// const OrderPage = (props) => {
-//   const { orders, removeOrder } = useOrder();
-
-//   const removeFromOrder = (index) => {
-//     removeOrder(index); // Remove order at the specified index
-//   };
-
-//   const handlePayment = () => {
-//     // Implement payment logic here
-//     console.log("Payment logic goes here");
-//   };
-
-//   // Function to calculate the total sum of the order
-//   const calculateTotalSum = () => {
-//     return orders
-//       .reduce((total, order) => total + parseFloat(order.price.slice(1)), 0)
-//       .toFixed(2);
-//   };
-
-//   return (
-//     <div>
-//       <h1>Order Page</h1>
-//       {orders.length > 0 ? (
-//         <ul>
-//           {orders.map((order, index) => (
-//             <li key={index}>
-//               <div>
-//                 <img
-//                   src={order.img}
-//                   alt={order.title}
-//                   style={{ width: "50px", height: "50px" }}
-//                 />
-//                 <br />
-//                 <p>{order.title}</p>
-//                 <p>{order.price}</p>
-//                 <button onClick={() => removeFromOrder(index)}>Remove</button>
-//               </div>
-//             </li>
-//           ))}
-//         </ul>
-//       ) : (
-//         <p>No orders yet</p>
-//       )}
-//       <p>Total: ${calculateTotalSum()}</p> {/* Display total sum */}
-//       <button onClick={handlePayment}>Pay Now</button> {/* Payment button */}
-//     </div>
-//   );
-// };
-
-// export default OrderPage;
 import React from "react";
 import { useOrder } from "../contexts/OrderContext";
+import { useNavigate } from "react-router-dom";
 
 const OrderPage = () => {
+  const navigate = useNavigate();
   const { orders, removeOrder } = useOrder();
 
   const removeFromOrder = (index) => {
-    removeOrder(index); // Remove order at the specified index
+    removeOrder(index);
   };
 
   const handlePayment = () => {
-    // Implement payment logic here
-    console.log("Payment logic goes here");
+    // Navigate to the payment page
+    navigate("/payment");
   };
 
-  // Function to calculate the total sum of the order
   const calculateTotalSum = () => {
     return orders
       .reduce((total, order) => total + parseFloat(order.price.slice(1)), 0)
@@ -74,21 +22,21 @@ const OrderPage = () => {
   };
 
   return (
-    <div className="m-1 bg-gray-300 flex flex-col flex-wrap mt-48">
-      <h1 className="mt-36 flex flex-col text-3xl text-center font-semibold mb-12">
+    <div className=" bg-gray-300 grid grid-col p-24 mb-24 ">
+      <h1 className="m-36 flex flex-col text-3xl text-center font-semibold">
         Order Page
       </h1>
       {orders.length > 0 ? (
-        <div className="flex flex-col flex-wrap gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {orders.map((order, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-lg shadow-md flex items-center"
+              className="bg-white p-10 rounded-lg shadow-md flex items-center"
             >
               <img
                 src={order.img}
                 alt={order.title}
-                className="w-16 h-16 rounded-full mr-4"
+                className="w-22 h-20  rounded-full mr-4"
               />
               <div>
                 <h2 className="text-lg font-semibold mb-2">{order.title}</h2>
@@ -96,7 +44,7 @@ const OrderPage = () => {
               </div>
               <button
                 onClick={() => removeFromOrder(index)}
-                className="ml-auto px-12 py-2 bg-red-500 text-white rounded hover:bg-red-600 mt-48"
+                className="ml-auto px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 mt-4"
               >
                 Remove
               </button>

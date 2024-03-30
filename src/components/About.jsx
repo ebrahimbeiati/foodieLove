@@ -2,8 +2,8 @@ import hero1 from "../assets/img/hero1.jpeg";
 const About = () => {
   return (
     <>
-      <div className="pt-12 mt-6 bg-gray-100 flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-semibold text-center mb-10 pt-24 md:px-32 px-5">
+      <div className="pt-1 mt-2 bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center mb-10 pt-2 md:px-32 px-5">
           About Us{" "}
         </h1>
       </div>

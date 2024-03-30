@@ -174,7 +174,10 @@ const ReviewCard = () => {
   };
 
   return (
-    <div className="flex flex-wrap  flex-cols-3 gap-2 m-3">
+   <div className="px-24  flex items-center flex-wrap justify-center gap-4">
+
+
+    <div className="  pt-4 flex flex-wrap  flex-cols-3 gap-2 m-3">
       {reviews.map((review, index) => (
         <div
           key={index}
@@ -197,6 +200,7 @@ const ReviewCard = () => {
           <p className="text-gray-800">{review.reviewText}</p>
         </div>
       ))}
+      </div>
     </div>
   );
 };

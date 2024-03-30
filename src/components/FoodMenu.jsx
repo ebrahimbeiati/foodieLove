@@ -32,33 +32,33 @@ const FoodMenu = () => {
 
 
   const foodItems = [
-    { title: "Cakes", img: cake, price: "$10", rating: 4.5 },
-    { title: "Pizzas", img: pizza, price: "$15", rating: 4.5 },
-    { title: "Salads", img: salad, price: "$5", rating: 3.5 },
-    { title: "Burgers", img: burger, price: "$20", rating: 4.5 },
-    { title: "Vegies", img: vegie, price: "$10", rating: 4.5 },
-    { title: "Pasta", img: pasta, price: "$10", rating: 4.5 },
-    { title: "Chicken", img: chicken, price: "$20", rating: 4.5 },
-    { title: "Fish", img: fish, price: "$25", rating: 4.5 },
+    { title: "Cakes", img: cake, price: "$15", rating: 4.5 },
+    { title: "Pizzas", img: pizza, price: "$25", rating: 4.5 },
+    { title: "Salads", img: salad, price: "$15", rating: 3.5 },
+    { title: "Burgers", img: burger, price: "$30", rating: 4.5 },
+    { title: "Vegies", img: vegie, price: "$15", rating: 4.5 },
+    { title: "Pasta", img: pasta, price: "$20", rating: 4.5 },
+    { title: "Chicken", img: chicken, price: "$30", rating: 4.5 },
+    { title: "Fish", img: fish, price: "$35", rating: 4.5 },
     { title: "Hamburger", img: hamburger, price: "$15", rating: 4.5 },
-    { title: "Kebab", img: kebab, price: "$20", rating: 4.5 },
-    { title: "Indian Spicy", img: indianspicy, price: "$15", rating: 4.5 },
-    { title: "Noodles", img: noodles, price: "$10", rating: 4.5 },
-    { title: "Steak", img: steak, price: "$30", rating: 4.5 },
-    { title: "Spaghetti", img: spagheti, price: "$10", rating: 4.5 },
-    { title: "Soup", img: soup, price: "$10", rating: 4.5 },
-    { title: "Shrimp", img: shrimp, price: "$25", rating: 4.5 },
-    { title: "Prawn", img: prawn, price: "$20", rating: 4.5 },
-    { title: "Fruit Salad", img: fruitsalad, price: "$10", rating: 4.5 },
+    { title: "Kebab", img: kebab, price: "$40", rating: 4.5 },
+    { title: "Indian Spicy", img: indianspicy, price: "$25", rating: 4.5 },
+    { title: "Noodles", img: noodles, price: "$20", rating: 4.5 },
+    { title: "Steak", img: steak, price: "$50", rating: 4.5 },
+    { title: "Spaghetti", img: spagheti, price: "$20", rating: 4.5 },
+    { title: "Soup", img: soup, price: "$15", rating: 4.5 },
+    { title: "Shrimp", img: shrimp, price: "$35", rating: 4.5 },
+    { title: "Prawn", img: prawn, price: "$35", rating: 4.5 },
+    { title: "Fruit Salad", img: fruitsalad, price: "$15", rating: 4.5 },
     { title: "French Fries", img: frenchfries, price: "$10", rating: 4.5 },
-    { title: "Eggs Sandwich", img: eggsandwich, price: "$10", rating: 4.5 },
-    { title: "Crab", img: crab, price: "$20", rating: 4.5 },
+    { title: "Eggs Sandwich", img: eggsandwich, price: "$20", rating: 4.5 },
+    { title: "Crab", img: crab, price: "$30", rating: 4.5 },
   ];
 
   return (
     <>
-      <div className="pt-12 mt-6 bg-gray-100 flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-semibold text-center mb-10 pt-24 md:px-32 px-5">
+      <div className="pt-4 mt-4 bg-gray-100 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-semibold text-center mb-10 pt-1 md:px-32 px-5">
           Our Food Menu
         </h1>
       </div>
