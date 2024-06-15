@@ -9,8 +9,11 @@ const Home = () => {
           Find your desired food here.
         </h1>
         <p className="text-white p-2 rounded text-3xl">
-          Savor the taste of true culinary affection at FoodieLove, where each
-          meal is an expression of love for food and an invitation to delight.
+          {" "}
+          We provide you with the best food.
+          
+
+         
         </p>
       </div>
     </div>

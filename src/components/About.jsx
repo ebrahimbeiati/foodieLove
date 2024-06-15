@@ -22,9 +22,7 @@ const About = () => {
             </h1>
             <p className="text-center md:flex md:flex-wrap md:items-center justify-center">
               We are committed to providing our customers with the best possible
-              service. We take your safety and comfort seriously. We are
-              committed to providing our customers with the best possible
-              service. We take your safety and comfort seriously.
+              service. We take your safety and comfort seriously. 
             </p>
           </div>
           <div className="space-y-4">
